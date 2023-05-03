@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> ADYAR </title>
+<link rel="stylesheet" href="styles.css">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<body>
+<div class="sidebar">
+<header> Adyar </header>
+<ul>
+<li><a href="#"><i class="fas fa-qrcode"></i>Dashboard</a></li>
+<li><a href="#"><i class="fas fa-link"></i>Shortcuts</a></li>
+<li><a href="#"><i class="fas fa-stream"></i>Overview</a></li>
+<li><a href="#"><i class="fas fa-calendar-week"></i>Events</a></li>
+<li><a href="#"><i class="fas fa-question-circle"></i>About Us</a></li>
+<li><a href="#"><i class="fas fa-sliders-h"></i>Services</a></li>
+<li><a href="#"><i class="fas fa-qrcode"></i>Contact</a></li>
+
+<h1 style="color:"black;"><center>ADYAR</center></h1><hr>
+<p>
+<center><img src="C:\Users\anaba\OneDrive\Desktop\PICTURES\Adayar.jpg" width=30% heighy=25%></center>
+<ul type="disc">
+<li> Adyar is a posh neighburhood located in Chennai</li>
+<li> Adyar is home to several upscale cafes</li>
+<li> It gets its name from the Adyar river</li>
+<li> Adyar is home to several prestigious institutions like IIT and Anna University</li>
+</ul>
+<br><br>
+<h2>Housing at Adyar</h2>
+<p> The following data shows the square-feet price in sub-localities of Adyar as of Apr 2023</p>
+<table border="1">
+<tr>
+<th>Sub-localities</th>
+<th>Price</th>
+</tr>
+<tr>
+<td>Gandhi Nagar</td>
+<td>20,434 RS</td>
+
+<tr>
+<td>Shastri Nagar</td>
+<td>17,600 RS</td>
+</tr>
+
+<tr>
+<td>Kasturba Nagar</td>
+<td>18,500 RS</td>
+</tr>
+
+<tr>
+<td>Indira Nagar</td>
+<td> 13,700 RS</td>
+</tr>
+</table> <br> <br>
+
+<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+
+<script>
+const xValues = [2018,2019,2020,2021,2022];
+
+new Chart("myChart", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{ 
+      data: [15500,16200,17800,19600,20550],
+      borderColor: "red",
+      fill: false
+    }, { 
+      data: [15000,17000,18000,19000,19400],
+      borderColor: "green",
+      fill: false
+    }, { 
+      data: [13300,13900,14000,15500,16000],
+      borderColor: "blue",
+      fill: false
+    }]
+  },
+  options: {
+    legend: {display: false}
+  }
+});
+</script>
+<p> Register here to buy house at Adyar</p>
+<form>
+<fieldset>
+<legend> Personal Details</legend>
+<p>
+<label> Salutation<br/>
+<select name="salutation">
+<option>--None</option>
+<option>Mr</option>
+<option>Mrs</option>
+</select> <br><hr>
+</label>
+</p>
+<p>
+<label>Full name: <input name="fullName"/></label>
+</p>
+<p>
+<label>Date of Birth: <input type="date" name="birthDate"></label>
+<p>
+<label>Address: <br>
+<textarea name="address" cols="30" rows="3"></textarea>
+</label>
+<p>
+<button type="submit">Submit</button>
+</p><br><br><hr>
+<h3> Things you can find only in Adyar</h3>
+<ul type="square">
+<p><li> <strong> The International Headquarters of <i>Theosophical Society</i> is at Adyar</strong></li></p>
+<p><li> Adyar houses the <b>largest mural painting in India</b></li></p>
+<p><li> India's first photography-themed cafe is at Adyar</li></p>
+<p><li> Adyar houses South India's first cancer institute</li></p>
+<br>
+</html>
